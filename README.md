@@ -374,19 +374,6 @@ Instead of forcing merchants to manually search through payment information, the
 
 Built as an AI-powered solution for intelligent merchant operations and payment insights.
 
-### 🌐 Live Website
-
-https://cmjmf-27-6-117-147.free.pinggy.net
-
-### 🎥 Demo Video
-
-https://drive.google.com/file/d/1t_35VA5Lzpt42PocfJp1IN6sMosijbQk/view?usp=drive_link
-
----
-
-## ⭐ Support
-
-If you find this project interesting, consider giving the repository a ⭐ on GitHub.
 
 ---
 
