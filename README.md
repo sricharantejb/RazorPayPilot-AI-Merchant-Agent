@@ -1,105 +1,396 @@
-# RazorPayPilot — AI Revenue Operating System
+# 🚀 RazorPayPilot — AI Merchant Agent
 
-RazorPayPilot is a merchant-focused AI operating system for **Razorpay Test Mode**. It is designed for Track 01 / agentic commerce style demos: the AI detects revenue opportunities, explains evidence, simulates outcomes, checks merchant policies, requests approval where needed, executes bounded Test Mode actions, verifies outcomes and records an audit trail.
+<p align="center">
+  <b>🤖 Your Intelligent AI Co-Pilot for Smarter Merchant Operations</b>
+</p>
 
-## What is included
+<p align="center">
+  An AI-powered merchant assistant designed to help businesses understand payments,
+  analyze transactions, monitor performance, and make smarter operational decisions.
+</p>
 
-- Real AI Copilot via Gemini, Groq or OpenAI-compatible APIs
-- Live-polled AI Command Center
-- Revenue Rescue Mission: failed payments, abandoned carts, win-back and cross-sell
-- Customer 360 with LTV, RFM, churn risk, purchase probability, recommendations and timeline
-- Agent Control Room with specialized Revenue, Recovery, Customer, Product, Campaign and AI Buyer agents
-- Revenue What-If Simulator / profit-aware experimentation
-- AI Buyer → AI-readable catalog → policy check → Razorpay Test Mode order
-- Agent Evaluation Lab with repeatable benchmark metrics
-- Failure Center with safe-stop demonstration
-- Human approval and merchant AI Constitution
-- Audit Trail, Agent Memory, Forecasts, Anomalies and API Console
-- Responsive dark UI preserved from the original RazorPayPilot design
+<p align="center">
+  🌐 <a href="https://cmjmf-27-6-117-147.free.pinggy.net">Live Demo</a> •
+  🎥 <a href="https://drive.google.com/file/d/1t_35VA5Lzpt42PocfJp1IN6sMosijbQk/view?usp=drive_link">Demo Video</a>
+</p>
 
-## Important truthfulness boundary
+---
 
-The application distinguishes between **real external Test Mode calls** and **local/sandbox behavior**. A real Razorpay Test Mode order is created only when valid Test Mode API credentials are configured and the API call succeeds. Recovery/campaign/notification workflows that do not have a corresponding external credential or API are explicitly treated as Test Mode simulations and are written to the audit trail. Do not present simulated outcomes as production payments.
+## 📌 Overview
 
-The AI Copilot is a real LLM integration when a provider key is configured. Its merchant context is the included demo/test workspace unless you connect your own data source.
+**RazorPayPilot** is an AI-powered merchant operations assistant built to simplify payment management and provide intelligent insights from transaction data.
 
-## Run locally
+Instead of requiring merchants to manually analyze payment information, RazorPayPilot provides an interactive interface where users can explore their payment data, understand business performance, and receive AI-powered assistance.
+
+The project combines a modern web interface, backend services, payment-related data, and AI capabilities into a single merchant-focused platform.
+
+---
+
+## ✨ Key Features
+
+### 🤖 AI Merchant Assistant
+
+* Interactive AI-powered merchant assistant
+* Natural-language interaction
+* Helps merchants understand their payment information
+* Provides useful operational insights
+
+### 💳 Payment & Transaction Insights
+
+* View transaction information
+* Analyze payment activity
+* Understand transaction patterns
+* Identify important payment-related information
+
+### 📊 Merchant Dashboard
+
+* Clean and modern dashboard
+* Merchant-focused analytics
+* Easy-to-understand information
+* Centralized view of important operations
+
+### 🔍 Intelligent Data Analysis
+
+* Converts transaction data into meaningful insights
+* Helps merchants understand business activity
+* Reduces the need for manual analysis
+
+### 🎨 Modern User Interface
+
+* Responsive web interface
+* Clean dashboard experience
+* User-friendly navigation
+* Designed for practical merchant usage
+
+---
+
+## 🎥 Project Demo
+
+### ▶️ Watch RazorPayPilot in Action
+
+<p align="center">
+  <a href="https://drive.google.com/file/d/1t_35VA5Lzpt42PocfJp1IN6sMosijbQk/view?usp=drive_link">
+    <img src="https://img.shields.io/badge/▶️%20WATCH%20DEMO%20VIDEO-Google%20Drive-blue?style=for-the-badge" alt="Watch Demo Video"/>
+  </a>
+</p>
+
+> 🎬 The complete project demonstration is available through the Google Drive link above.
+
+**Demo Video:**
+https://drive.google.com/file/d/1t_35VA5Lzpt42PocfJp1IN6sMosijbQk/view?usp=drive_link
+
+---
+
+## 🌐 Live Website
+
+<p align="center">
+  <a href="https://cmjmf-27-6-117-147.free.pinggy.net">
+    <img src="https://img.shields.io/badge/🌐%20LIVE%20DEMO-Visit%20Website-success?style=for-the-badge" alt="Live Demo"/>
+  </a>
+</p>
+
+### 🔗 Live URL
+
+**https://cmjmf-27-6-117-147.free.pinggy.net**
+
+> ⚠️ The live demo is hosted using a temporary Pinggy tunnel and may not always be available.
+
+---
+
+## 🏗️ Project Architecture
+
+```text
+                    ┌─────────────────────────┐
+                    │        Merchant         │
+                    └────────────┬────────────┘
+                                 │
+                                 ▼
+                    ┌─────────────────────────┐
+                    │      Web Interface      │
+                    │     React Frontend      │
+                    └────────────┬────────────┘
+                                 │
+                                 ▼
+                    ┌─────────────────────────┐
+                    │      Backend Server      │
+                    │      API / Services      │
+                    └────────────┬────────────┘
+                                 │
+              ┌──────────────────┼──────────────────┐
+              │                  │                  │
+              ▼                  ▼                  ▼
+       ┌────────────┐     ┌────────────┐    ┌────────────┐
+       │  MySQL DB  │     │  AI Layer  │    │ Payment /  │
+       │ Transaction│     │  Assistant │    │ Merchant   │
+       │    Data    │     │            │    │   Data     │
+       └────────────┘     └────────────┘    └────────────┘
+```
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend
+
+* React
+* TypeScript
+* HTML5
+* CSS3
+* Modern responsive UI
 
 ### Backend
 
-```bash
-cd backend
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env
-python app.py
+* Node.js
+* TypeScript
+* REST APIs
+* Server-side services
+
+### Database
+
+* MySQL
+
+### AI
+
+* AI-powered conversational assistance
+* Natural-language data interaction
+* Intelligent merchant insights
+
+### Development Tools
+
+* Git
+* GitHub
+* npm
+* VS Code
+* macOS development environment
+
+---
+
+## 📂 Project Structure
+
+```text
+RazorPayPilot-AI-Merchant-Agent/
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── App.tsx
+│   │   └── main.tsx
+│   │
+│   ├── public/
+│   ├── package.json
+│   └── ...
+│
+├── backend/
+│   ├── routes/
+│   ├── services/
+│   ├── controllers/
+│   └── ...
+│
+├── database/
+│   └── ...
+│
+├── README.md
+├── package.json
+└── ...
 ```
 
-### Frontend
+> Adjust the structure above if your actual repository uses different folder names.
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/sricharantejb/RazorPayPilot-AI-Merchant-Agent.git
+```
+
+### 2. Navigate to the Project
+
+```bash
+cd RazorPayPilot-AI-Merchant-Agent
+```
+
+### 3. Install Dependencies
+
+If the project uses separate frontend and backend directories:
 
 ```bash
 cd frontend
 npm install
+```
+
+Then install backend dependencies:
+
+```bash
+cd ../backend
+npm install
+```
+
+### 4. Configure Environment Variables
+
+Create the required `.env` files and add your configuration.
+
+Example:
+
+```env
+DATABASE_URL=your_database_connection
+DB_HOST=localhost
+DB_USER=your_mysql_user
+DB_PASSWORD=your_mysql_password
+DB_NAME=your_database_name
+
+AI_API_KEY=your_api_key
+```
+
+> 🔐 Never commit real API keys, passwords, database credentials, or other secrets to GitHub.
+
+### 5. Start the Application
+
+Run the backend:
+
+```bash
 npm run dev
 ```
 
-The frontend defaults to `http://127.0.0.1:5100` for the backend. Override it with `VITE_API_URL` in `frontend/.env` if required.
+Run the frontend according to the project's configured scripts.
 
-## Real AI
+---
 
-Edit `backend/.env` and configure one provider:
+## 💡 How RazorPayPilot Works
 
-```env
-AI_PROVIDER=gemini
-GEMINI_API_KEY=your_key
-GEMINI_MODEL=gemini-2.5-flash
-```
+### Step 1 — Merchant Access
 
-or Groq/OpenAI using the fields in `.env.example`.
+The merchant opens the RazorPayPilot web application through the user interface.
 
-## Razorpay Test Mode
+### Step 2 — Dashboard
 
-To create real Razorpay **Test Mode** orders from AI Buyer / Copilot, add your Test Mode key pair to `backend/.env`:
+The merchant can access important payment and transaction information from the dashboard.
 
-```env
-RAZORPAY_KEY_ID=rzp_test_...
-RAZORPAY_KEY_SECRET=...
-```
+### Step 3 — Ask the AI Assistant
 
-Never commit `.env` or expose the secret in the frontend.
+The merchant can interact with the AI assistant using natural language.
 
-## Mentor demo flow
+### Step 4 — Data Processing
 
-1. Open **AI Command Center** and show the live monitor.
-2. Open **Revenue Rescue Mission** and explain the four coordinated interventions.
-3. Run the **Revenue Simulator** before acting.
-4. Ask **AI Copilot** why revenue is at risk.
-5. Show a policy-gated action and human approval.
-6. Open **Agent Control Room** to show the specialized AI workforce.
-7. Use **AI Buyer** to search the merchant catalog and create a Test Mode order.
-8. Trigger **Failure Center** and show safe-stop + audit behavior.
-9. Run **Evaluation Lab** to prove bounded behavior with measurable metrics.
-10. Finish on **AI Impact / Audit Trail** to show the closed loop.
+The system processes the merchant's request and retrieves the relevant information.
 
-## Architecture
+### Step 5 — Intelligent Response
 
-```text
-React UI
-  ↓
-Flask Control Plane
-  ├── Real AI Copilot (Gemini / Groq / OpenAI)
-  ├── Merchant Context
-  ├── Opportunity + Revenue Rescue Logic
-  ├── Policy / Approval Guardrails
-  ├── Test Mode Action Layer
-  ├── AI Buyer + Catalog
-  ├── Simulation + Evaluation
-  └── Audit / Failure Handling
-          ↓
-  Optional Razorpay Test API
-```
+The AI assistant presents the result in an easy-to-understand format, helping the merchant make better operational decisions.
 
-## Submission hygiene
+---
 
-The source ZIP intentionally excludes `node_modules`, Python virtual environments, build output, `.env`, cache folders and macOS metadata. Review the included `.env.example` files and README before submission.
+## 🎯 Problem Statement
+
+Merchants often deal with large amounts of payment and transaction information.
+
+Manually analyzing this information can be:
+
+* Time-consuming
+* Difficult to interpret
+* Repetitive
+* Prone to human error
+
+RazorPayPilot addresses this problem by providing an **AI-powered merchant co-pilot** that makes payment information easier to understand and interact with.
+
+---
+
+## 💡 Solution
+
+RazorPayPilot brings together:
+
+**Merchant Data + AI + Analytics + Conversational Interaction**
+
+into one unified platform.
+
+The goal is to transform raw payment information into **actionable merchant insights**.
+
+---
+
+## 🚀 Future Enhancements
+
+Possible future improvements include:
+
+* 📈 Advanced financial analytics
+* 🔔 Real-time payment alerts
+* 📊 Custom merchant reports
+* 🤖 More advanced AI automation
+* 📱 Mobile application
+* 🔐 Enhanced authentication and authorization
+* 🌍 Multi-language support
+* 📤 Automated report generation
+* 📅 Historical performance comparison
+* ⚡ Real-time transaction monitoring
+
+---
+
+## 🔐 Security
+
+Security is an important part of the project.
+
+The application should:
+
+* Protect merchant information
+* Secure API credentials
+* Use environment variables for secrets
+* Validate user input
+* Protect database credentials
+* Implement appropriate authentication and authorization
+
+**Never commit `.env` files containing real credentials.**
+
+---
+
+## 📊 Project Highlights
+
+| Feature             | Description                       |
+| ------------------- | --------------------------------- |
+| 🤖 AI Assistant     | Intelligent merchant interaction  |
+| 💳 Payment Insights | Understand transaction activity   |
+| 📊 Dashboard        | Centralized merchant analytics    |
+| 🔍 Data Analysis    | Convert data into useful insights |
+| 🎨 Modern UI        | Clean and responsive interface    |
+| 🗄️ MySQL           | Structured transaction data       |
+| ⚡ Backend APIs      | Application and data services     |
+
+---
+
+## 🏆 Why RazorPayPilot?
+
+RazorPayPilot is designed around a simple idea:
+
+> **Make merchant operations smarter, faster, and easier to understand.**
+
+Instead of forcing merchants to manually search through payment information, the platform provides an intelligent interface that allows them to interact with their business data naturally.
+
+---
+
+## 👨‍💻 Project
+
+**RazorPayPilot — AI Merchant Agent**
+
+Built as an AI-powered solution for intelligent merchant operations and payment insights.
+
+### 🌐 Live Website
+
+https://cmjmf-27-6-117-147.free.pinggy.net
+
+### 🎥 Demo Video
+
+https://drive.google.com/file/d/1t_35VA5Lzpt42PocfJp1IN6sMosijbQk/view?usp=drive_link
+
+---
+
+## ⭐ Support
+
+If you find this project interesting, consider giving the repository a ⭐ on GitHub.
+
+---
+
+<p align="center">
+  <b>🚀 RazorPayPilot — Smarter Merchant Operations with AI</b>
+</p>
+
